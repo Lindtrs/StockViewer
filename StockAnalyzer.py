@@ -162,11 +162,11 @@ class analysis:
 
          for i in self.plotsSMA:
 
-            ax1.plot(self.data.index , self.data[i] , '-' , label=i)
+            ax1.plot(self.data.index , self.data[i] , '-' , label=i.upper())
 
          for i in self.plotsEMA:
 
-            ax1.plot(self.data.index , self.data[i] , '-' , label=i)
+            ax1.plot(self.data.index , self.data[i] , '-' , label=i.upper())
 
          ax1.legend()
 
