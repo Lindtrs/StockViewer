@@ -2,7 +2,7 @@ from StockAnalyzer import analysis
 
 #Dependencies: yfinance, pandas, matplotlib 
 
-googleStock = analysis("GOOG")
+googleStock = analysis("GOOG", '2018-11-01' , '2020-04-21')
 
 # Variation in %
 googleStock.VAR()

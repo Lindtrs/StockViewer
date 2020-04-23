@@ -5,10 +5,10 @@ import pandas as pd
 
 class analysis:
 
-   def __init__ (self, stock):
+   def __init__ (self, stock, date1, date2):
       
       self.stock = stock
-      self.data = yf.download(self.stock , '2018-11-01' , '2020-04-21')
+      self.data = yf.download(self.stock , date1, date2)
 
       self.plotsSMA = []
       self.plotsEMA = []
