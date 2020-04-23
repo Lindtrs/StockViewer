@@ -1,8 +1,9 @@
 from StockAnalyzer import analysis
 
+
 #Dependencies: yfinance, pandas, matplotlib 
 
-googleStock = analysis("GOOG", '2018-11-01' , '2020-04-21')
+googleStock = analysis("GOOG", "2018-11-01" , "2020-04-21") # Creates an analysis, from 2018-11-01 to 2020-04-21
 
 # Variation in %
 googleStock.VAR()
@@ -24,3 +25,8 @@ googleStock.EMA(50)  # Creates EMA of 50 days
 
 # Plot all the data + indicators
 googleStock.plot()
+
+#  You can add how many indicators you want
+#  You can comment or remove the line if you
+#  want to remove an indicator, for example:
+#  #googleStock.EMA(25)
