@@ -6,16 +6,16 @@ from StockAnalyzer import analysis
 googleStock = analysis("GOOG", "2018-11-01" , "2020-04-21") # Creates an analysis, from 2018-11-01 to 2020-04-21
 
 # Variation in %
-googleStock.VAR()
+#googleStock.VAR()
 
 # MACD lines (fast and slow) - Default is 12, 26 and 9 days.
-googleStock.MACD()
+#googleStock.MACD()
 
 # MACD Histogram
 googleStock.MACDhistogram()
 
 # SMA - Simple moving average
-googleStock.SMA(15) # Creates SMA of 15 days
+#googleStock.SMA(15) # Creates SMA of 15 days
 
 # EMA - Exponential moving average
 googleStock.EMA(10)  # Creates EMA of 10 days
@@ -30,3 +30,4 @@ googleStock.plot()
 #  You can comment or remove the line if you
 #  want to remove an indicator, for example:
 #  #googleStock.EMA(25)
+
