@@ -95,7 +95,7 @@ class analysis:
 
       for i in range (len(ema12)):
       
-         fastMACD.append(int(ema26[i]) - int(ema12[i]))
+         fastMACD.append(float(ema26[i]) - float(ema12[i]))
 
       slowMACD = []
       slowMACD = self.EMA(9, plot=False, data=fastMACD)
