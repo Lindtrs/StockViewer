@@ -1,9 +1,9 @@
-from StockAnalyzer import analysis
+from StockViewer import view
 
 
 #Dependencies: yfinance, pandas, matplotlib 
 
-googleStock = analysis("GOOG", "2018-11-01" , "2020-04-21") # Creates an analysis, from 2018-11-01 to 2020-04-21
+googleStock = view("GOOG", "2018-01-10" , "2020-05-07") # Creates an analysis, from 2018-11-01 to 2020-04-21
 
 # Variation in %
 #googleStock.VAR()
