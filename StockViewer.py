@@ -157,6 +157,8 @@ class view:
             
                   ax2.plot(self.data.index, self.data[self.parallelGraph], label='Var%')
 
+         ax1.set_ylabel('Price')
+         ax2.set_xlabel('Date')
          ax2.legend()         
          ax2.grid()
 
@@ -172,10 +174,12 @@ class view:
 
             self.data[i].plot(label=i.upper())
 
-
+         plt.xlabel('Date')
+         plt.ylabel('Price')
          plt.legend()
          plt.grid()
 
+      plt.subplots_adjust(hspace=0)
       plt.show()
 
 
