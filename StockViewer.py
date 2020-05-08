@@ -128,18 +128,19 @@ class view:
 
          fig, (ax1, ax2) = plt.subplots(2, 1, sharex=True, figsize=(6, 6), gridspec_kw={'height_ratios': [3, 1]})
          
-         ax1.plot(self.data.index , self.data['Close'] , '-' , label=self.stock)
+         ax1.plot(self.data.index , self.data['Close'] , label=self.stock)
 
          for i in self.plotsSMA:
 
-            ax1.plot(self.data.index , self.data[i] , '-' , label=i.upper())
+            ax1.plot(self.data.index , self.data[i] , label=i.upper())
 
          for i in self.plotsEMA:
 
-            ax1.plot(self.data.index , self.data[i] , '-' , label=i.upper())
+            ax1.plot(self.data.index , self.data[i] , label=i.upper())
 
 
          ax1.legend()
+         ax1.grid()
 
          
          if self.parallelGraph == 'macd':
@@ -156,7 +157,8 @@ class view:
             
                   ax2.plot(self.data.index, self.data[self.parallelGraph], label='Var%')
 
-         ax2.legend()
+         ax2.legend()         
+         ax2.grid()
 
       else:
 
@@ -172,7 +174,8 @@ class view:
 
 
          plt.legend()
-      
+         plt.grid()
+
       plt.show()
 
 
