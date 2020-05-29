@@ -63,6 +63,11 @@ class view:
       
       return ema
 
+   def VOL (self):
+
+      self.parallelGraph = "vol"
+      
+
    def VAR (self, plot=True , data=[]):
 
       if len(data) == 0:
@@ -156,6 +161,11 @@ class view:
          elif self.parallelGraph == 'var':
             
                   ax2.plot(self.data.index, self.data[self.parallelGraph], label='Var%')
+
+         elif self.parallelGraph == 'vol':
+            
+                  ax2.plot(self.data.index, self.data['Volume'], label='Volume')
+                  ax2.fill_between(self.data.index , self.data['Volume'])
 
          ax1.set_ylabel('Price')
          ax2.set_xlabel('Date')
