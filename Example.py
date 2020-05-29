@@ -8,6 +8,9 @@ googleStock = view("GOOG", "2019-01-10" , "2020-05-07") # Creates an analysis, f
 # Variation in %
 #googleStock.VAR()
 
+# Traded volume
+#googleStock.VOL()
+
 # MACD lines (fast and slow) - Default is 12, 26 and 9 days.
 #googleStock.MACD()
 
